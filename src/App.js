@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Map from './map'
+import Users from './Users'
+
 function App() {
+  //Width and height of map
+var width = 960;
+var height = 500;
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        States We Have Visited
       </header>
+      <div className="App-main">
+        <Map/>
+        <Users/>
+      </div>
+      <footer>
+        WIP by Gary Varner
+      </footer>
     </div>
   );
 }
